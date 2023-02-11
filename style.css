@@ -1,0 +1,534 @@
+:root{
+    --pri : 'CooperLtBTWXX-Light';
+    --sec : 'Aeonik Pro';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+#nav{
+    background-color: #fff;
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+#nav h1{
+    font-family: var(--pri);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    cursor: pointer;
+}
+#nav h1 span{
+    color: #00EB8F;
+}
+#nav h1:hover{
+    transform: scale(0.9);
+    opacity: 0.7;
+}
+#rnav{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    font-family: var(--sec);
+    font-size: 1.1rem;
+}
+#rnav a{
+    text-decoration: none;
+    color: #000;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.1s;
+}
+#rnav a:hover{
+    text-decoration: 2px underline #00EB8F;
+}
+#nav #button{
+    position: relative;
+    width: 11vw;
+    height: 5.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 1vw;
+    border: 1px solid #0005;
+    background-color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+}
+#button h4{
+    font-size: 1rem;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+#button img{
+    width: 35%;
+    z-index: 10;
+}
+#cover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -100%;
+    background-color: #00EB8F;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#button:hover #cover{
+    left: 0;   
+}
+
+#page1{
+    margin-top: 12vh;
+    position: relative;
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#page1 h1{
+    font-family: var(--pri);
+    font-size: 5rem;
+    font-weight: 100;
+    text-align: center;
+    line-height: 1.3;
+}
+#head{
+    margin-bottom: 5vh;
+
+}
+#head::after{
+    content: "";
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,0);
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    width: 22%;
+    height: 2vh;
+}
+#page1 h2{
+    font-family: var(--sec);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+#page1 #button{
+    position: relative;
+    width: 4vw;
+    height: 4vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid #0005;
+    background-color: transparent;
+}
+#page1 #button img{
+    transform: scale(2);
+}
+
+#page1>img{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    
+}
+#img1{
+    top: 45%;
+    left: 20%;
+    width: 23vw;
+    z-index: -1;
+}
+#img1:hover{
+    transform: translateY(-18%);
+}
+#img2{
+    top: 21%;
+    left: 68%;
+    width: 17vw;
+    z-index: -1;
+    
+}
+#img3{
+    top: 70%;
+    left: 80%;
+    width: 18vw;
+    z-index: -1;
+}
+
+#page2{
+    width: 100vw;
+    height: 67vh;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#page2 #text{
+    position: relative;
+    width: 60vw;
+    text-align: center;
+    font-family: var(--sec);
+}
+#page2 h3{
+    font-weight: 100;
+}
+#page2 h1{
+    font-family: var(--pri);
+    font-weight: 100;
+    font-size: 3rem;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+#page2 h2{
+    font-weight: 100;
+}
+#page2 #text>img{
+    position: absolute;
+    top: 56%;
+    left: 37%;
+    width: 14vw;
+    height: 9vh;
+}
+#page2 h2{
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+#page2 #button{
+    overflow: hidden;
+    position: relative;
+    width: 4vw;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    background-color: transparent;
+}
+#page2 #button img{
+    transform: scale(1.5);
+}
+
+
+#page3{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+}
+#page3 #left{
+    width: 50%;
+    height: 100%;
+    /* background-color: #dadada; */
+    display: flex;
+    gap: 2vw;
+}
+#lphoto{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+#rphoto{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+#page3 #lphoto img{
+    width: 11.5vw;
+}
+#page3 #img3{
+    width: 28vw;
+}
+#page3 #img4{
+    width: 36vw;
+}
+#page3 #right{
+    width: 50%;
+    height: 100%;
+    /* background-color: #0008; */
+}
+
+#right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#right #text{
+    width: 78%;
+}
+#right #text h1{
+    font-family: var(--pri);
+    font-size: 3.9rem;
+    font-weight: 100;
+    margin-bottom: 5vh;
+    line-height: 1.2;
+}
+#right #text p{
+    font-family: var(--sec);
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+
+#page3 #button{
+    font-family: var(--sec);
+    position: relative;
+    width: 12vw;
+    height: 5.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 1vw;
+    border: 1px solid #0005;
+    background-color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+
+#page4{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+#page4 h1{
+    font-family: var(--pri);
+    font-size: 3.5rem;
+    font-weight: 100;
+    margin-bottom: 12vh;
+    /* background-color: red; */
+}
+
+#page4 #logos{
+    text-align: center;
+    margin-left: 4vw;
+}
+
+#page4 #logos img{
+    width: 9vw;
+    margin-right: 7vw;
+    margin-bottom: 11vh;
+    /* background-color: blue; */
+}
+
+#page5{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    color: #fff;
+}
+.halfpage5{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1vw;
+}
+/* #page5left{
+    background-color: red;
+}
+#page5right{
+    background-color: blue;
+} */
+
+#page5 .hoverdiv{
+    width: 85%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+}
+#hoverdiv1{
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/work/Golf.jpeg?w=1200&h=900&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1635867985&s=5e7cee6801a656523b56b64a34d04786);
+}
+#hoverdiv2{
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/work/work-thumbnail-03.jpg?w=1200&h=900&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1627573623&s=efbebf8d2134c057c66886c970e18069);
+    margin-right: 7vw;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#page5 .overlay>img{
+    width: 10vw;
+}
+
+#page5 h1{
+    font-family: var(--pri);
+    font-size: 2.7rem;
+    font-weight: 100;
+}
+#page5 h2{
+    display: flex;
+    gap: 1vw;
+    font-family: var(--sec);
+    font-weight: 100;
+    font-size: 1.7rem;
+}
+#page5 #hoverdiv1 h2{
+    margin-top: -8vh;
+}
+#page5 #hoverdiv2 h2{
+    margin-top: -15vh;
+    margin-bottom: -1vh;
+}
+#page5 #button{
+    overflow: hidden;
+    position: relative;
+    width: 4vw;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    background-color: transparent;
+}
+#page5 #button img{
+    transform: scale(1.5);
+}
+
+
+#page6{
+    width: 100vw;
+    height: 110vh;
+    background-color: white;
+  }
+
+  .swiper {
+    width: 65%;
+    height: 70%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: red; */
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #page6 .swiper-slide #box{
+    width: 100%;
+    height: 100%;
+    /* background-color: tomato; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 40px 0;
+  }
+  #page6 .swiper-slide #box #logopic{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+   #page6 .swiper-slide #box #logopic img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+   }
+  
+
+  #page6 .swiper-slide #box h1{
+    font-family: var(--pri);
+    font-size: 4vw;
+    font-weight: 100;
+  }
+  #page6 .swiper-slide #box #about{
+    width: 250px;
+    height: 80px;
+    /* background-color: red; */
+    font-family: var(--sec);
+    text-align: center;
+    padding-top: 20px;
+  }
+  #page6 .swiper-slide #box #about h3{
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  #page6 .swiper-slide #box #about h3 span{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #00EB8F;
+    display: inline-block;
+  }
+  #page6 .swiper-slide #box #about p{
+    color:gray;
+
+  }
+
+
+#footer{
+    width: 100vw;
+    height: 70vh;
+    background-color: #000;
+    color: #fff;
+}
+#footertop{
+    display: flex;
+    justify-content: space-around;
+}
+#footertop #imag{
+    display: flex;
+    flex-direction: column;
+}
+#footertop img{
+    width: 10vw;
+}

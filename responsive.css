@@ -1,0 +1,57 @@
+@media (max-width: 600px) {
+    body,html {
+        width: 100%;
+        
+    }
+    #rnav{
+        width: 10vw;
+        height: 8vh;
+        background-image: url(https://cdn.icon-icons.com/icons2/2582/PNG/512/menu_icon_153999.png);
+        background-size: cover;
+        background-position: center;
+        transform: rotateY(180deg);
+    }
+    #rnav a{
+        display: none;
+    }
+    #rnav #button{
+        display: none;
+    }
+    #page1{
+        width: 100%;
+        height: 40vh;
+        /* background-color: red; */
+        /* flex-direction: column; */
+    }
+    #page1 h1{
+        font-size: 2rem;
+    }
+    #page1 h2{
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
+    #page1 #button{
+        width: 35px;
+        height: 22px;
+    }
+    #img1{
+        position: absolute;
+        top: 100%;
+        width: 100%;
+    }
+    #img2{
+        display: none;
+    }
+    #img3{
+        display: none;
+    }
+    #page2 #text{
+        width: 90vw;
+    }
+    #page2 h3{
+        font-size: 0.8rem;
+    }
+    #page2 h1{
+        font-size: 1.5rem;
+    }
+}
